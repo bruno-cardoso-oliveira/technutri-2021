@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    
+</head>
+<body class="registrar">
+    <div id="main-container">
+        <h1 class="tituloCadastro">Novo Paciente</h1>
+        <br>
+        <from action="" method="" id="register-form">
+            <div class="half-box">
+                <label for="nome">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Informe o nome">
+            </div>
+            <div class="half-box-lastname">                
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Informe o sobrenome">
+            </div>
+            <div class="half-box-lastname">                
+                <label for="sobrenome">Altura (cm)</label>
+                <input type="number" name="altura" id="altura" placeholder="Informe a altura">
+            </div>
+            <div class="half-box-password-c">
+                <label for="password">Data de nascimento</label>
+                <input type="date" name="datanascimento" id="datanascimento">
+            </div>
+            <div class="half-box">
+                <label for="nome">Peso Atual (kg)</label>
+                <input type="number" name="peso" id="peso" placeholder="Informe o peso">
+            </div>
+            <div class="half-box">
+                <label for="nome">Sexo</label>
+                <input type="text" name="sexo" id="sexo" placeholder="Informe o sexo">
+            </div>
+            <div class="half-box-lastname">                
+                <label for="objetivo">Objetivo</label>
+                <input type="text" name="objetivo" id="objetivo" placeholder="Informe o objetivo">
+            </div>
+            <div class="half-box-password">
+                <label for="password">Endereço</label>
+                <input type="text" name="endereco" id="endereco" placeholder="Informe o endereço">
+            </div>
+            <a href="./bem-vindo.html"><input type="reset" value="Voltar" id=""></a>
+            <a onclick="minhaFuncao()"><input type="submit" value="Cadastrar" id=""></a>
+        </from>
+    </div>
+    
+    <script>
+
+        function minhaFuncao(){
+
+            var name = document.querySelector('#name').value;
+            var lastname = document.querySelector('#lastname').value;
+            var altura = document.querySelector('#altura').value;
+            var datanascimento = document.querySelector('#datanascimento').value;
+            var peso = document.querySelector('#peso').value;
+            var sexo = document.querySelector('#sexo').value;
+            var objetivo = document.querySelector('#objetivo').value;
+            var endereco = document.querySelector('#endereco').value;
+
+            alert("Nome: "+name+" "+lastname+" / "+"Altura: "+altura+" / "+"Data de Nascimento: "+datanascimento+" / "+"Peso: "+peso+" / "+"Sexo: "+sexo+" / "
+            +"Objetivo: "+objetivo+" / "+"IMC: "+peso/(altura*altura/10000)+" / "+"Peso Ideal: "+(altura - 100)*0.9);
+        }
+
+    </script>
+    
+</body>
+</html>

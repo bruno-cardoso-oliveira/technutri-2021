@@ -1,0 +1,302 @@
+//Cores do Site//
+$cor_container: hsl(113, 96%, 44%), #fff,  hsl(208, 75%, 44%);
+$azul_padrao: #08558b;
+$cor_texto: #080808;
+$cor_fundo_formulario: #FFF;
+$cor_facebook: #3B5998;
+$cor_linkedin: #0077b5;
+$cor_borda:  #05da65;
+$cor_hover_botao: #1b223c;
+$cor_fonte_rede_social: #fff;
+$cor_link_termo: #042848;
+$cor_botao: #06b9f5, #0099ff, #00b7ff;
+
+%container_padrao {
+    background-image: linear-gradient(to right, $cor_container);    
+    margin-left: auto;
+    margin-right: auto; /* Margin left e right centraliza o elemento no centor da tela.*/
+    padding: 20px 30px;
+    border-radius: 4px 175px; /* arrendoda as bordas */
+    text-align: center; 
+    border:10px solid $cor_borda;
+}
+
+%formulario {
+    flex: 1 1 45%;
+    position: relative;
+    padding: 8px;
+}
+
+%complemento_formulario {
+    width: 600px;
+    font-size: 1.2rem;
+    padding: 35px; /* espaçamento */
+    margin-top: 3vh; /* Recua o elemento 3% do top da tela em qualquer tamanho d tela. */
+}
+
+%config_geral {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: $cor_texto;
+    border: none;
+}
+
+
+/* Configuração Geral */
+
+* {
+    @extend %config_geral;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+
+
+body {
+    background-image: url("../img/2927262.jpg");
+    background-size: cover;
+    background-position-y: -200px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a {
+    font-size: .8rem;
+}
+
+a:hover {
+    color: $azul_padrao;
+}
+
+/* container login*/
+
+#login-container {
+    width: 400px;
+    @extend %container_padrao;
+    margin-top: 10vh; /* Recua o elemento 10% do top da tela em qualquer tamanho d tela. */
+}
+
+.titulo-login {
+    text-align: left;
+}
+
+
+/* formulario */
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    
+}
+
+label, input {
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    border-bottom: 4px solid $cor_texto;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;    
+}
+
+input:focus {
+    border-bottom: 2px solid $azul_padrao;
+    ;    
+}
+
+#forgot-pass {
+    text-align: right;
+    display: block;    
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: $cor_fundo_formulario;
+    background-image: linear-gradient(45deg,#4169E1,#B0C3Dd, #B0C4DE,#4169E1);
+    cursor: pointer;
+}
+
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(45deg, #B0C4DE,#4169E1,#5189E6, #B0C4DE);
+    transition: 1; 
+}
+
+/* redes social*/
+
+#social-container i {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: $cor_fonte_rede_social;
+    margin: 15px 8px;
+    cursor: pointer;    
+}
+
+.fa-facebook {
+    background-color: $cor_facebook;    
+}
+
+.fa-linkedin {
+    background-color: $cor_linkedin;
+}
+
+/*registro*/
+
+#register-container p {
+    margin-bottom: 10px;
+}
+
+/* Pagina Registrar*/
+
+.registrar {
+    background-image: url("../img/geometric.jpg");
+    background-size: cover;
+    /*background-position-y: -180px;*/
+}
+
+#main-container {
+    @extend %container_padrao;
+    @extend %complemento_formulario;
+}
+
+.tituloCadastro {
+    font-size: 2.5rem;
+}
+
+#register-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;    
+}
+
+.half-box {
+    @extend %formulario
+}
+
+.half-box-lastname {
+    @extend %formulario
+}
+
+.half-box-password {
+    @extend %formulario
+}
+
+.half-box-password-c {
+    @extend %formulario
+}
+    
+.termo-a {
+    font-size: 1.2rem;
+    color: $cor_link_termo;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+/* Pagina Termo*/
+
+.termo {
+    background-image: url("../img/2927262.jpg");
+    background-size: cover;
+    background-position-y: -200px;
+}
+
+
+.container-termo {
+    @extend %container_padrao;
+    @extend %complemento_formulario
+}
+
+h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.termo p {
+    text-align: justify;
+    padding: 12px;
+}
+
+/* Pagina Esqueci minha senha */
+
+.container-esqueci {
+    width: 400px;
+    @extend %container_padrao;
+    margin-top: 10vh;
+    padding: 50px 80px;
+}
+
+.texto-esqueci {
+    margin: 25px 5px;
+}
+
+.botoes-esqueci {
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Pagina Recuperação */
+
+.container-recuperacao {
+    width: 400px;
+    @extend %container_padrao;
+    margin-top: 10vh;
+    padding: 50px 80px;
+}
+
+.titulo-recuperacao {
+    margin: 15px;
+}
+
+/* Pagina Bem-Vindo */
+
+.bem-vindo {
+    background-image: url(../img/bem-vindo.jpg);
+    background-size: cover;
+    background-position-y: -200px;
+}

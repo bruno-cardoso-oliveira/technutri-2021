@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body class="registrar">
+    <div id="main-container">
+        <h1 class="tituloCadastro">Preencha os campos</h1>
+        <br>
+        <from action="" method="" id="register-form">
+            <div class="full-box"> 
+                <label for="email">E-mail</label>
+                <input type="email" name="email" placeholder="Digite seu email">
+            </div>
+            <div class="half-box">
+                <label for="nome">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome">
+            </div>
+            <div class="half-box-lastname">                
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
+            </div>
+            <div class="half-box-password">
+                <label for="password">Endereço</label>
+                <input type="password" name="password" id="password" placeholder="Informe seu endereço">
+            </div>
+            <div class="half-box-password-c">
+                <label for="password">Data de nascimento</label>
+                <input type="date" name="datanascimento" id="datanascimento">
+            </div>
+            <div class="full-box"> 
+                <input type="checkbox" name="agreement" id="agreement">
+                <label id="agreement-label" for="agreement">Eu li e aceito os <a class="termo-a" href="termo.html">termos de uso</a>.</label>                
+                <a href="bem-vindo.html"><input type="submit" value="Registrar"></a>
+            </div>    
+            </from>
+        <div id="social-container">
+            <p>Ou entre pelas suas redes sociais</p>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-linkedin"></i></a>            
+        </div>
+    </div>    
+</body>
+</html>

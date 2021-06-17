@@ -1,0 +1,285 @@
+@charset "UTF-8";
+#login-container, #main-container, .container-termo, .container-esqueci, .container-recuperacao {
+  background-image: -webkit-gradient(linear, left top, right top, from(#c5e2fc), color-stop(#fff), to(#c5e2fc));
+  background-image: linear-gradient(to right, #c5e2fc, #fff, #c5e2fc);
+  margin-left: auto;
+  margin-right: auto;
+  /* Margin left e right centraliza o elemento no centor da tela.*/
+  padding: 20px 30px;
+  border-radius: 4px 175px;
+  /* arrendoda as bordas */
+  text-align: center;
+  border: 10px solid #042848;
+}
+
+.half-box, .half-box-lastname, .half-box-password, .half-box-password-c {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
+  position: relative;
+  padding: 8px;
+}
+
+#main-container, .container-termo {
+  width: 600px;
+  font-size: 1.2rem;
+  padding: 35px;
+  /* espaçamento */
+  margin-top: 10vh;
+  /* Recua o elemento 3% do top da tela em qualquer tamanho d tela. */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #323232;
+  border: none;
+}
+
+/* Configuração Geral */
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+body {
+  background-image: url("../img/geometric.jpg");
+  background-size: cover;
+  background-position-y: -200px;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+a {
+  font-size: .8rem;
+}
+
+a:hover {
+  color: #08558b;
+}
+
+/* container login*/
+#login-container {
+  width: 400px;
+  margin-top: 20vh;
+  /* Recua o elemento 10% do top da tela em qualquer tamanho d tela. */
+}
+
+.titulo-login {
+  text-align: left;
+}
+
+/* formulario */
+form {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+label, input {
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  border-bottom: 4px solid #323232;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  border-bottom: 2px solid #08558b;
+}
+
+#forgot-pass {
+  text-align: right;
+  display: block;
+}
+
+input[type="submit"] {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #0054c2, #0054c2, #0054c2, #0054c2);
+  cursor: pointer;
+}
+input[type="reset"] {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #0054c2, #0054c2, #0054c2, #0054c2);
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-image: linear-gradient(45deg, #2cc087, #2cc087, #2cc087, #2cc087);
+  -webkit-transition: 1;
+  transition: 1;
+}
+
+input[type="reset"]:hover {
+  background-image: linear-gradient(45deg, #c90909, #c90909, #c90909, #c90909);
+  -webkit-transition: 1;
+  transition: 1;
+}
+/* redes social*/
+#social-container i {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  color: #fff;
+  margin: 15px 8px;
+  cursor: pointer;
+}
+
+.fa-facebook {
+  background-color: #3B5998;
+}
+
+.fa-linkedin {
+  background-color: #0077b5;
+}
+
+/*registro*/
+#register-container p {
+  margin-bottom: 10px;
+}
+
+/* Pagina Registrar*/
+.registrar {
+  background-color: #1c6eb6;
+  background-size: cover;
+  /*background-position-y: -180px;*/
+}
+
+.tituloCadastro {
+  font-size: 2.5rem;
+}
+
+#register-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.full-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  position: relative;
+}
+
+.termo-a {
+  font-size: 1.2rem;
+  color: #042848;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#agreement, #agreement-label {
+  display: inline-block;
+  width: auto;
+}
+
+/* Pagina Termo*/
+.termo {
+  background-image: url("../img/2927262.jpg");
+  background-size: cover;
+  background-position-y: -200px;
+}
+.cadastrarbutton{
+  margin: 20px;
+}
+
+h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 12px;
+}
+
+.termo p {
+  text-align: justify;
+  padding: 12px;
+}
+
+/* Pagina Esqueci minha senha */
+.container-esqueci {
+  width: 400px;
+  margin-top: 10vh;
+  padding: 50px 80px;
+}
+
+.texto-esqueci {
+  margin: 25px 5px;
+}
+
+.botoes-esqueci {
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Pagina Recuperação */
+.container-recuperacao {
+  width: 400px;
+  margin-top: 10vh;
+  padding: 50px 80px;
+}
+
+.titulo-recuperacao {
+  margin: 15px;
+}
+
+/* Pagina Bem-Vindo */
+.bem-vindo {
+  background-color: #0071d4;
+  background-size: cover;
+  background-position-y: -200px;
+}
+/*# sourceMappingURL=style.css.map */
+
+.datanascimento{
+  padding-left:22px;
+    width: 100px;
+}
